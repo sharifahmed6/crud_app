@@ -174,11 +174,11 @@ class _AddNewProductScreenState extends State<AddNewProductScreen> {
     if(response.statusCode == 200){
       _cleatTextFeild();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Success')),
+        const SnackBar(content: Text('Product Updated')),
       );
     }else{
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('feaild')),
+        const SnackBar(content: Text('Product Update Failed')),
       );
     }
   }
